@@ -18,7 +18,9 @@ defmodule Mdns.Mixfile do
   #
   # Type "mix help compile.app" for more information
   def application do
-    [extra_applications: [:logger], mod: {Mdns, []}, env: [port: 5353]]
+    [extra_applications: [:logger]
+    # mod: {Mdns, []}, env: [port: 5353]
+    ]
   end
 
   def description do
